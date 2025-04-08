@@ -499,25 +499,21 @@ span {
     color: black;
 }
 
-.dominando h2{
+.dominando .titulo{
     margin-bottom: 2rem;
     font-size: 5rem;
     text-align: center;
-    color: var(--bg-color);
+    color: var(--main-color);
 }
 
-.dominando-box {
-    display: flex;
-    justify-content: center;
+.aprendizado-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     align-items: center;
-    background-color: var(--bg-tertiary-color);
-    padding: 5rem 0;
-    border-radius: 15px;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    gap: 2.5rem;
 }
 
 .dominando-content {
-    display: flex;
     background-color: var(--main-color);
     height: 300px;
     border-radius: 3rem;
@@ -526,6 +522,46 @@ span {
     transition: 0.4 ease-in-out;
 }
 
+.dominando-content {
+    display: flex;
+    background-color: var(--bg-tertiary-color);
+    /* height: 300px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4 ease-in-out; */
+}
+
+.dominando-content:hover {
+    background-color: gray;
+    border: 5px solid var(--bg-tertiary-color);
+    box-shadow: 0 0 25px white,
+                /* 0 0 50px white,
+                0 0 100px white;  */
+}
+
+.dominando-info h4 {
+    font-size: 20px;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.dominando-info h2 {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.dominando-info p {
+    font-size: 15px;
+    color: var(--text-color);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} 
 
 /* .box-sobre {
     font-size: 25px;
@@ -678,7 +714,7 @@ span {
 form {
     display: flex;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
     height: 100%;
     background-color: var(--bg-tertiary-color);
@@ -701,13 +737,13 @@ form {
     color: var(--main-color);
 }
 
-.contact h2:hover {
+/* .contact h2:hover {
     color: var(--main-color);
     text-shadow: 0 0 25px var(--main-color),
-                 0 0 50px var(--main-color), 
-                 0 0 100px var(--main-color);
+                  0 0 50px var(--main-color), 
+                0 0 100px var(--main-color); 
     transition: 0.3s ease-in-out;
-}
+} */
 
 .contact form {
     display: flex;
