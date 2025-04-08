@@ -8,13 +8,18 @@
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+
+
 </head>
 
 <body>
 
     <header>
 
-        <!-- <h2>Renan Arida</h2> -->
+        <!-- <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
 
         <nav class="menu-desktop">
             <ul id="paginas">
@@ -28,17 +33,17 @@
                     </a>
                 </li>
                 <li> 
-                    <a href="#sessao-terciaria">
-                        Projetos
+                    <a href="#dominando">
+                        Aprendizado
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#sessao-quaternaria">
                         Cursos
                     </a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="html/contato.html">Contato
+                    <a href="#contact">Contato
                     </a>
                 </li>
             </ul>
@@ -86,7 +91,7 @@
                 <div class="btn-group">
                     <a href="/html/login.html" class="btn">Entrar</a>
                     <a href="#contact"
-                    class="btn">Contact</a>
+                    class="btn">Contato</a>
                 </div>
             </div>
                 <div class="home-img">
@@ -111,28 +116,69 @@
                      Quasi ut aspernatur quam iure, voluptates esse eius nobis,
                       aliquam culpa assumenda, quisquam enim ex quia porro nisi 
                       optio minima laboriosam voluptate.</p>
-                      <a href="#" class="btn">Saiba mais</a>
+                      <a href="html/sobre-mim.html" class="btn">Saiba mais</a>
             </div>
 
     </section>
 
-    <section class="sessao-terciaria" id="sessao-terciaria"> 
-            <h2>Meus Projetos</h2>
+    <section class="dominando" id="dominando"> 
+            <h2>Aprendizado:</h2>
 
-            <div>
-                <h2>Projetos:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam?</p>
+        <div class="aprendizado-box">
+            <div class="dominando-content">
+                <div class="dominando-info">
+                <h2>HTML:</h2>
+                <h4>Atualmente, estou estudando html e irei apresentar um site com html e css para o dia 25/04.</h4>
+                <p>  HTML é a linguagem de estilo responsável por estruturar o conteúdo de páginas na web. Com o HTML, 
+                    organizamos elementos como títulos, parágrafos, imagens, links, botões, listas e muito mais, criando
+                     a base para qualquer site ou aplicação web.</p>
             </div>
-
+        </div>
+            <div class="dominando-content">
+                    <div class="dominando-info">
+                <h2>Css:</h2>
+                <h4>Atualmente, estou estudando css e irei apresentar um site com html e css para o dia 25/04</h4>
+                <p>CSS é a linguagem  de estilo usada para definir o visual e o design de uma página web. Com o CSS, é possível estilizar elementos HTML,
+                    controlando cores, tamanhos, fontes, espaçamentos, posicionamentos, animações e muito mais.</p>
+                    </div>
+            </div>
+            <div class="dominando-content">
+                <div class="dominando-info">        
+                    <h2>bootstrap:</h2>
+                    <h4>Também estou estudando bootstrap, que irei utilizar para deixar meu site responsivo.</h4>
+                    <p>Bootstrap é um framework front-end que facilita a criação de sites modernos, bonitos e responsivos com muito mais agilidade.
+                        Ele oferece uma coleção pronta de códigos CSS, JavaScript e componentes HTML reutilizáveis — como botões, formulários, modais,
+                        carrosséis e barras de navegação — que ajudam a padronizar e acelerar o desenvolvimento web.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="sessao-quaternaria" id="sessao-quaternaria">
-            <h2>Cursos assistidos</h2>    
+    <section class="contact" id="contact">
+            <h2>Contato</h2>    
 
-            <div class="box-cursos">
-                <h2>Meus cursos:</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ullam?</p>
-            </div>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-box">
+                        <label class="nome" for="nome">Seu nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class='input-box'>
+                        <label class="nome" for="email">Seu email:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                        
+                    <div class='input-box'>
+                        <label class="nome" for="numero">Seu Número:</label>
+                        <input type="number" id="numero" name="numero" placeholder="Digite seu número" required>
+                    </div>
+                </div>
+                      
+                <div class="text-area-box">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+            </form>
 
     </section>
 
@@ -163,11 +209,11 @@
                     </a>
                 </li>
 
-                <li>
+                <!-- <li>
                     <a href="#sessao-quaternaria">
                         Cursos
                     </a>
-                </li>
+                </li> -->
 
                 <li>
                     <a href="html/contato.html">Contato
@@ -181,7 +227,6 @@
             </P>
 
     </footer>
-
+    <!-- <script src="js/script.js"></script> -->
 </body>
-
 </html>
