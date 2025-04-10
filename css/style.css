@@ -897,6 +897,22 @@ iframe{
         width: 56vw;
         height: 56vw;
     }
+    .dominando {
+        flex-direction: column;
+        gap: 5rem 4rem;
+    }
+    .dominando h2 {
+        font-size: 30px;
+    }
+    .dominando-info h2 {
+        font-size: 30px;
+    }
+    .dominando-info h4 {
+        font-size: 15px;
+    }
+    .dominando-info p {
+        font-size: 12px;
+    }
 }
 
 @media(max-width: 500px) {
