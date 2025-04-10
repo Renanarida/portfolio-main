@@ -869,7 +869,7 @@ iframe{
         margin: 5rem 4rem;
     }
     .home-content h1{
-        font-size: 5rem;
+        font-size: 4rem;
         margin-top: 2rem;
     }
     .home-content p{
@@ -877,6 +877,62 @@ iframe{
         margin: 0 auto;
     }
     .home-img img {
+        width: 25vh;
+        height: 25vh;
+    }
+
+    .sessao-secundaria {
+        flex-direction: column;
+        gap: 5rem 4rem;
+    }
+    .about-content h2{
+        font-size: 4rem;
+    }
+    .about-content p{
+        max-width: 500px;
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+    .about-img img{
         width: 56vw;
+        height: 56vw;
+    }
+}
+
+@media(max-width: 500px) {
+    .home {
+        flex-direction: column-reverse;
+        margin: 4rem 3rem;
+    }
+    .home-content h1{
+        margin: 0;
+        font-size: 3rem;
+        margin-top: 1rem;
+        padding: 0 2rem;
+    }
+    .home-content p{
+        max-width: 400px;
+        font-size: 1.0rem;
+        padding: 0 2rem;
+    }
+    .home-img img {
+        width: 20vh;
+        height: 20vh;
+    }
+    .about-img img{
+        width: 20vh;
+        height: 20vh;
+    }
+    .sessao-secundaria {
+        flex-direction: column;
+        gap: 4rem 3rem;
+    }
+    .about-content h2{
+        font-size: 3rem;
+    }
+    .about-content p{
+        max-width: 400px;
+        font-size: 1.0rem;
+        margin: 0 auto;
     }
 }
