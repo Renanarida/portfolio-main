@@ -33,38 +33,38 @@ section{
 }
 
 /*Faz uma animação na cor de fundo do site*/
-@keyframes colors {
+/* @keyframes colors {
 
     0% {
 
         background-position: 0% 50%; /* Começa com a cor no canto superior esquerdo */
 
-    }
+    /* }
 
     25% {
 
-        background-position: 100% 50%; /* Move para a direita */
+        background-position: 100% 50%;
 
     }
 
     50% {
 
-        background-position: 100% 100%; /* Move para a posição vertical inferior direita */
+        background-position: 100% 100%; 
 
     }
 
     75% {
 
-        background-position: 0% 100%; /* Move para a posição inferior esquerda */
+        background-position: 0% 100%; 
 
     }
 
     100% {
 
-        background-position: 0% 50%; /* Retorna para o topo */
+        background-position: 0% 50%; 
 
     }
-} 
+}   */
 
 
 /* @keyframes cores {
@@ -123,7 +123,7 @@ header {
 #paginas li {
     justify-content: center;
     text-align: center;
-
+    
 }
 
 li {
@@ -165,45 +165,116 @@ li a {
     padding: 12px;
 }
 
+/*inicio do menu/ hamburguer */
+.menu-desktop {
+    background: var(--bg-tertiary-color);
+    display: flex;
+    gap: 2rem;
+    align-items: right;
+    justify-content: flex-end;
+    transition: all 0.3s ease;
+}
+
+/* Ícone do menu hambúrguer */
+#menu-icon {
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    display: none; /* esconde o hamburguer da tela */
+}
+
+/* Itens do menu */
+.menu-desktop ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    /* color: #333; */
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        text-align: right;
+        background: var(--bg-tertiary-color);
+    }
+
+    .menu-desktop {
+        position: absolute;
+        top: 40px; /* altura header */
+        left: 0;
+        width: 100%;
+        background: var(--bg-tertiary-color);
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem 0;
+        display: none; /* esconde o hamburguer da tela */
+        z-index: 10;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .menu-desktop.active {
+        display: flex; /* mostra quando ativado */
+    }
+
+    .menu-desktop ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-desktop ul li a {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem;
+        width: 100%;
+        text-align: center;
+        border-radius: 0.5rem;
+    }
+}
+/*Fim do menu hamburguer*/
+
 /*Estilizar o botao CONTATO*/
-.Meu-contato {
+/* .Meu-contato {
     text-align: center;
     font-size: 20px;
     color: black;
     background-color: rgb(64, 92, 170);
     text-decoration: none;
     display: flex;
-}
+} */
 
-.estilo-botao h1 {
+/* .estilo-botao h1 {
     margin: 0%;
     padding: 5%;
-}
+} */
 
 /*Ajustar os botões das minhas redes sociais*/
-.estilo-botao a {
+/* .estilo-botao a {
     text-decoration: none;
     font-size: 20px;
     margin: 10%;
     display: flex;
     justify-content: left;
     top: 30px;
-}
+} */
 
-.estilo-botao button {
+/* .estilo-botao button {
     font-size: 20px;
     color: black;
     position: relative;
     top: 40%;
     background-color: rgb(64, 92, 170);
     text-decoration: none;
-}
+} */
 
-.eu {
+/* .eu {
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
     height: 500px;
     border-radius: 20px;
-}
+} */
 
 /* section {
     min-width: 100%;
@@ -386,31 +457,31 @@ span {
     background-color: rgb(0, 255, 21);
 } */
 
-#corpo1 {
+/* #corpo1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #corpo1 a {
     color: rgb(255, 245, 240);
-}
+} */
 
-#dados-contato {
+/* #dados-contato {
     display: flex;
     position: relative;
     color: black;
     top: 0%;
-}
+} */
 
-#contato-renan {
+/* #contato-renan {
     display: flex;
     font-size: 30px;
     justify-content: space-between;
     flex-direction: row;
     padding: 0%;
     text-align: left;
-}
+} */
 
-.box {
+/* .box {
     margin: 0%;
     display: flex;
     justify-content: center;
@@ -424,26 +495,26 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
-}
+} */
 
-.box button {
+/* .box button {
     background-color: gray;
     font-size: 20px;
     border-radius: 10px;
-}
+} */
 
-.box button:hover {
+/* .box button:hover {
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     border-radius: 10px;
-}
+} */
 
 
-#box-caixa {
+/* #box-caixa {
     width: 100%;
     height: 70%;
-}
-
+} */
+/* 
 .box form {
     width: 100%;
     height: 100%;
@@ -451,14 +522,14 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
-#texto-area {
+/* #texto-area {
     max-width: 250px;
     max-height: 280px;
     min-width: 250px;
     min-height: 250px;
-}
+} */
 
 .sessao-secundaria {
     display: flex;
@@ -501,7 +572,7 @@ span {
 
 .dominando .titulo{
     margin-bottom: 2rem;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
     color: var(--main-color);
 }
@@ -516,7 +587,7 @@ span {
 .dominando-content {
     background-color: var(--main-color);
     height: 300px;
-    border-radius: 3rem;
+    border-radius: 25px;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4 ease-in-out;
@@ -862,8 +933,46 @@ iframe{
     font-size: 16px;
     color: white;
 }
+@media(max-width: 1248px) {
 
-@media(max-width:895px) {
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 4rem;
+    }
+    .home-content h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .home-content p{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .home-img img {
+        width: 25vh;
+        height: 25vh;
+    }
+    .about-img img{
+        width: 25vh;
+        height: 25vh;
+    }
+    .sessao-secundaria {
+        flex-direction: column;
+        gap: 5rem 4rem;
+    }
+    .about-content h2{
+        font-size: 2.4rem;
+    }
+    .about-content p{
+        max-width: 700px;
+        font-size: 1.2rem;
+        margin: 0 auto;
+    }
+    .btn {
+        font-size: 1.6rem;
+    }
+}
+
+@media(max-width:900px) {
     .home {
         flex-direction: column-reverse;
         margin: 5rem 4rem;
@@ -901,9 +1010,13 @@ iframe{
         flex-direction: column;
         gap: 5rem 4rem;
     }
-    .dominando h2 {
+    /* .titulo {
+        font-size: 2rem;
+        text-align: center;
+    } */
+    /* .dominando h2 {
         font-size: 30px;
-    }
+    } */
     .dominando-info h2 {
         font-size: 30px;
     }
@@ -914,6 +1027,23 @@ iframe{
         font-size: 12px;
     }
 }
+@media(max-width: 678px) {
+    .dominando-info h2 {
+        font-size: 25px;
+    }
+    .dominando-info h4 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .dominando-info p {
+        display: none;
+    }
+    /* .titulo {
+        font-size: 1.4rem;
+        text-align: center;
+    } */
+}
+
 
 @media(max-width: 500px) {
     .home {
@@ -931,13 +1061,28 @@ iframe{
         font-size: 1.0rem;
         padding: 0 2rem;
     }
+    .social-icons a{
+        display: none;
+        /* width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+        justify-content: center;
+        text-align: center; */
+    }
+     .btn {
+        padding: 1rem 2rem;
+        font-size: 1.0rem;
+     }
+     .btn-group {
+        margin-top: 20px;
+     }
     .home-img img {
-        width: 20vh;
-        height: 20vh;
+        width: 25vh;
+        height: 25vh;
     }
     .about-img img{
-        width: 20vh;
-        height: 20vh;
+        width: 25vh;
+        height: 25vh;
     }
     .sessao-secundaria {
         flex-direction: column;
@@ -947,8 +1092,28 @@ iframe{
         font-size: 3rem;
     }
     .about-content p{
-        max-width: 400px;
+        max-width: 500px;
         font-size: 1.0rem;
         margin: 0 auto;
+    }
+    .dominando #titulo {
+        font-size: 30px;
+        text-align: center;
+    }
+    .dominando .titulo h2 {
+        font-size: 15px;
+    }
+    .dominando-info h2 {
+        font-size: 20px;
+    }
+    .dominando-info h4 {
+        font-size: 12px;
+    }
+    .dominando-info p {
+        display: none;
+    }
+    .list a {
+        font-size: 1.0rem;
+        padding: auto;
     }
 }
