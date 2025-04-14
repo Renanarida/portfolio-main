@@ -701,12 +701,20 @@ iframe{
         display: none;
     }
     #titulo1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     /* .titulo {
         font-size: 1.4rem;
         text-align: center;
     } */
+    .contact form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 5rem auto;
+        text-align: center;
+    }
 }
 
 
@@ -791,6 +799,22 @@ iframe{
         font-size: 1.0rem;
         padding: auto;
     }
+    #contact h2 {
+        font-size: 3rem;
+    }
+    .contact form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 5rem auto;
+        text-align: center;
+    }
+    .contact .nome {
+        font-size: 1.4rem;
+        color: var(--main-color);
+        text-align: center;
+    }
 }
 @media(max-width: 364px) {
     .list a {
@@ -807,5 +831,30 @@ iframe{
     .copyright {
         font-size: 12px;
         margin-top: 10px;
+    }
+    .contact .nome {
+        font-size: 1.4rem;
+        color: var(--main-color);
+        text-align: center;
+    }
+    #nome {
+        font-size: 0.8rem;
+        color: var(--main-color);
+        text-align: center;
+    }
+    #email {
+        font-size: 0.8rem;
+        color: var(--main-color);
+        text-align: center;
+    }
+    #numero {
+        font-size: 0.8rem;
+        color: var(--main-color);
+        text-align: center;
+    }
+    #mensagem {
+        font-size: 0.8rem;
+        color: var(--main-color);
+        text-align: center;
     }
 }

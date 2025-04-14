@@ -14,6 +14,8 @@ window.onscroll = () => {
             navlinks.forEach(link => {
                 link.classList.remove('active');
             });
+            console.log(id)
+            console.log(document.querySelector('header nav a[href*=' + id + ']'))
             document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
         }
     });
