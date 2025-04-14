@@ -426,6 +426,50 @@ span {
     padding: 0;
 } 
 
+.projeto-geral {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.projeto-geral h3 {
+    font-size: 2.2rem;
+    text-align: center;
+    align-items: center;
+    color: var(--main-color);
+}
+
+.projeto-geral p {
+    font-size: 1.0rem;
+    text-align: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.projeto .titulo {
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.img-projeto {
+    width: 400px;
+    height: 400px;
+    margin: 15px auto;
+    /* box-shadow: 0 0 25px var(--main-color); */
+    transition: 0.4s ease-in-out;
+}
+
+.img-projeto:hover {
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color); 
+}
+
 form {
     display: flex;
     padding: 20px;
