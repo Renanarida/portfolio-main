@@ -740,6 +740,14 @@ iframe{
     .dominando-info p {
         display: none;
     }
+    .projeto-geral {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 2.5rem;
+    }
 }
 
 @media(max-width: 678px) {
@@ -770,6 +778,14 @@ iframe{
         margin: 5rem auto;
         text-align: center;
     }
+    /* .projeto-geral {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 2.5rem;
+    } */
 }
 
 
@@ -850,6 +866,24 @@ iframe{
     .dominando-info p {
         display: none;
     }
+    .projeto .titulo {
+        font-size: 3rem;
+        text-align: center;
+        color: var(--main-color);
+    }
+    .projeto-geral h3 {
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: center;
+        color: var(--main-color);
+    }
+    .img-projeto {
+        width: 200px;
+        height: 200px;
+        box-shadow: #2c2b2b 10px 10px 25px;
+        border-radius: 25px;
+        margin: 15px auto;
+    }
     .list a {
         font-size: 1.0rem;
         padding: auto;
@@ -886,6 +920,17 @@ iframe{
     .copyright {
         font-size: 12px;
         margin-top: 10px;
+    }
+    .projeto .titulo {
+        font-size: 2rem;
+        text-align: center;
+        color: var(--main-color);
+    }
+    .projeto-geral h3 {
+        font-size: 1.2rem;
+        text-align: center;
+        align-items: center;
+        color: var(--main-color);
     }
     .contact .nome {
         font-size: 1.4rem;
