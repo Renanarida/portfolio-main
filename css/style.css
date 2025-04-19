@@ -396,6 +396,7 @@ span {
 }
 
 .dominando-content:hover {
+    transform: scale(1.06);
     background-color: gray;
     border: 5px solid var(--bg-tertiary-color);
     box-shadow: 0 0 25px white,
@@ -498,6 +499,10 @@ form {
     font-size: 2rem;
     color: var(--main-color);
     text-align: center;
+}
+
+.texto-hover:hover {
+    transform: scale(1.04);
 }
 
 .contact h2 {
