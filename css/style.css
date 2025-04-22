@@ -275,7 +275,6 @@ span {
 }
 
 .btn:hover {
-    /* transform: scale(1.05); */
     box-shadow: 0 0 50px var(--main-color);
 }
 
@@ -350,11 +349,6 @@ span {
 .dominando-content {
     display: flex;
     background-color: var(--bg-tertiary-color);
-    /* height: 300px;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
-    transition: 0.4 ease-in-out; */
 }
 
 .dominando-content:hover {
@@ -472,17 +466,8 @@ form {
     color: var(--main-color);
 }
 
-/* .contact h2:hover {
-    color: var(--main-color);
-    text-shadow: 0 0 25px var(--main-color),
-                  0 0 50px var(--main-color), 
-                0 0 100px var(--main-color); 
-    transition: 0.3s ease-in-out;
-} */
-
 .contact form {
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -683,13 +668,6 @@ iframe{
         flex-direction: column;
         gap: 5rem 4rem;
     }
-    /* .titulo {
-        font-size: 2rem;
-        text-align: center;
-    } */
-    /* .dominando h2 {
-        font-size: 30px;
-    } */
     .dominando-info h2 {
         font-size: 30px;
     }
@@ -731,10 +709,6 @@ iframe{
     #titulo1{
         font-size: 3rem;
     }
-    /* .titulo {
-        font-size: 1.4rem;
-        text-align: center;
-    } */
     .contact form {
         flex-direction: column;
         align-items: center;
@@ -743,14 +717,6 @@ iframe{
         margin: 5rem auto;
         text-align: center;
     }
-    /* .projeto-geral {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        gap: 2.5rem;
-    } */
 }
 
 
@@ -779,11 +745,6 @@ iframe{
     }
     .social-icons a{
         display: none;
-        /* width: 3.5rem;
-        height: 3.5rem;
-        font-size: 2rem;
-        justify-content: center;
-        text-align: center; */
     }
      .btn {
         padding: 1rem 2rem;
@@ -873,8 +834,6 @@ iframe{
 @media(max-width: 364px) {
     .list a {
         display: none;
-        /* font-size: 10px;
-        padding: 0.5rem 0.5rem; */
     }
     .footer .social a {
         width: 30px;
