@@ -228,8 +228,12 @@ span {
                 0 0 100px var(--main-color); /*Correção aqui*/
 } */
 
+.paragrafo-introuducao {
+    font-size: 1.4em;
+}
+
 .home-content p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;

@@ -1,0 +1,14 @@
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --bg-tertiary-color: #2c2b2b;
+    --text-color: white;
+    --main-color: rgb(0, 255, 21);
+}
+
+body {
+    background-color: var(--bg-tertiary-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
